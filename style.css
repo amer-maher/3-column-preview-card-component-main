@@ -1,0 +1,96 @@
+/* General styles */
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative; /* Added for positioning the image */
+}
+
+/* Sedan specific styles */
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sedan .button {
+    color: hsl(31, 77%, 52%);
+}
+
+/* SUV specific styles */
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv .button {
+    color: hsl(184, 100%, 22%);
+}
+
+/* Luxury specific styles */
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury .button {
+    color: hsl(179, 100%, 13%);
+}
+
+/* Icon styles */
+.icon img {
+    width: 50px;
+    height: auto;
+}
+
+.description {
+    margin: 15px 0;
+    font-size: 15px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.button {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 40px;
+    width: 100px;
+    height: 35px;
+    border: 2px solid ;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px 40px;
+    }
+
+    .card {
+        width: 30%;
+        margin-bottom: 0;
+    }
+
+    /* Adjust icon positioning for larger screens */
+    .icon img {
+        top: 20px; /* Adjust the positioning as needed */
+        left: auto;
+        right: 20px; /* Position the image in the top-right corner */
+    }
+}
